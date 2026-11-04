@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --color-admin-bg: #F7F5F0;
+  --color-admin-card: #FFFFFF;
+  --color-admin-text: #24221E;
+  --color-admin-muted: #77736C;
+  --color-admin-gold: #B39458;
+  --color-admin-gold-hover: #9B7940;
+  --color-admin-gold-light: #F4EEDF;
+  --color-admin-border: #E8E3D9;
+  --color-admin-success: #3E7B54;
+  --color-admin-warning: #C98A2C;
+  --color-admin-danger: #A63A3A;
+  --color-admin-maroon: #5A1725;
+  --color-admin-dark: #1A1816;
+
+  --bg-primary: #F7F5F0;
+  --bg-card: #FFFFFF;
+  --text-primary: #24221E;
+  --text-secondary: #77736C;
+  --antique-gold: #B39458;
+  --gold-hover: #9B7940;
+  --gold-light: #F4EEDF;
+  --border-color: #E8E3D9;
+  --color-success: #3E7B54;
+  --color-warning: #C98A2C;
+  --color-danger: #A63A3A;
+
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #F7F5F0;
+  color: #24221E;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9D2C5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B39458;
+}
+
+/* Luxury gold accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #9B7940 0%, #B39458 45%, #D4AF37 70%, #9B7940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-badge {
+  background: #F8F5EE;
+  color: #9B7940;
+  border: 1px solid rgba(179, 148, 88, 0.3);
+}
+
+.luxury-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E3D9;
+  box-shadow: 0 1px 3px 0 rgba(36, 34, 30, 0.03), 0 1px 2px -1px rgba(36, 34, 30, 0.03);
+}
+
+.luxury-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card-hover:hover {
+  border-color: #D4AF37;
+  box-shadow: 0 8px 24px -4px rgba(36, 34, 30, 0.08);
+}
